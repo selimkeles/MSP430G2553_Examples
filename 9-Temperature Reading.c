@@ -1,3 +1,7 @@
+/*
+    Reads Data from temperature sensor and prints it via 7Segment Decoder 
+*/
+
 #include <msp430.h>
 /*************************************************************/
 /******************PRE DEFINED VALUES*************************/

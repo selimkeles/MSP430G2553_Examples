@@ -1,3 +1,7 @@
+/*
+   Using G2553's External Interrupt feature to binary count 3 bits
+*/
+
 #include <msp430.h>
 
 #define LED1 BIT0
@@ -82,8 +86,8 @@ void turnON(int bit)
 #pragma vector = PORT1_VECTOR
 __interrupt void Port1_ISR (void)   // Interrupt of pragma vector
         {
-         count++;                   //led number
-         updateLeds();              //updating leds
-         __delay_cycles(250000);     //for button bouncing
-         P1IFG &= ~BIT5;            // P1.5 IFG Cleared again
-         }
+        count++;                   //led number
+        updateLeds();              //updating leds
+        __delay_cycles(250000);     //for button bouncing
+        P1IFG &= ~BIT5;            // P1.5 IFG Cleared again
+        }

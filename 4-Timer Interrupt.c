@@ -1,4 +1,7 @@
- #include <msp430.h>
+/*
+    Using Timer Interrupt to upcount 3 bits binary. External Interrupt changes count direction. 
+*/
+#include <msp430.h>
 
 #define LED1 BIT0
 #define LED2 BIT1

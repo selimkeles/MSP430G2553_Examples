@@ -1,3 +1,7 @@
+/*
+    2 Bit Binary Counter Using onboard LEDs and preventing debouncing 
+*/
+
 #include<msp430.h>
 
 

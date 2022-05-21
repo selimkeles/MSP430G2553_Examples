@@ -1,5 +1,8 @@
 #include <msp430.h>
 
+/*
+    Using ADC peripheral to Read data from P1.3 
+*/
 
 void main(void)
 {
